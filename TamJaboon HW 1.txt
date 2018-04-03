@@ -1,0 +1,39 @@
+1. 
+  1) x <- c(17, 16, 20, 24, 22, 15, 21, 18)
+     x[x>=20]
+     x[x>=20]=100
+     y<-x
+     y
+
+2.
+  1) x <- rbind(c(3,-1,-1,-1,-1),
+           c(-1,4,-1,-1,-1),
+           c(-1,-1,5,-1,-1),
+           c(-1,-1,-1,6,-1),
+           c(-1,-1,-1,-1,7))
+     x
+  2) y <- x[,-5]
+     y
+  3) yinfo <-c(nrow(y), ncol(y))
+     yinfo
+  4) y[y<0]=0
+     y
+
+3.
+  1) save(rowdata, file = ¡°rowdata.rda¡±)
+  2) is.na(rowdata)
+  3) library(dplyr) 
+     rowdata %>% filter(!is.na(v2) & !is.na(v3))
+  4) rdata1 <- rowdata %>% filter(!is.na(v2) & !is.na(v3))
+     save(rdata1 , file = ¡°rdata1.rda¡±)
+
+4.
+  1) A <-c(1,1)
+    diag(A)
+    temp <- list(1+1==2, diag(A), seq(0,1 , length=100), 1,2,3,4 )
+    temp
+  2) temp[-2]
+  3) 
+
+
+  4) length(temp[-2])
